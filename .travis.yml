@@ -1,0 +1,14 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: sWnWTM1BC+E39fnfVXjZKYMPOhEVgsYfKy15GZfINWhX1z/tU6OvoQOfRCeqw5BwGPHrgF4fvm14m9s/AzOpqLmlHI9FjbjuGsfKpjC1++LQik0QDuEv90M5Vgrja/Wdi9ubOgiiKZ1O9YbJWsoZJZ9dM8zV+g4lAz6NUi6XI8Kgix9D8JBsUeLCNANa2jUKE5I6T52EsYJr1XiiIgmPTJfPh0HedhIsDnv38UpOewegslcBL6haT3MJAYKo5QQN7u3CfgDCptyeCx9tdBKtNbgAQOrWbiTEa3SHLJTGnKNLVvg0U85+QPvY1fOeyYhFkdOmgrkVsk+41rR0/tx7LIyZf3dTo7qkdbXqGtDrXGky7ZRz37gd1ALbrTniNMfYsua+HxGfBg2YBF99hECdRrJTthJqYiuiPK4utx1tWjGLVUd4NmAGZrnwWDbAVgZw0gZlNQww3AiAVX+mvYoiuyWBpoMVoH1HK1CDAnwYf5gWUZSiZynlYOixbrvz7kLQkF6LTt+5rEpfP1FhEq2UATF38/1sZxRyS+Cg72W1+XZ8hluHySx5yOqKf6AtVXYX4iARmUFRlrTB8oJDnM0hEs0cYY0q7s9O0gqgHJrQs8r4K6ECYOM2L7Nh0wgd74UXn0oXA6sOWNkouXPkNnmqeeYYX01xwPzph/0S0NeKZ9E=
+  app: afternoon-springs-67456
+  on:
+    repo: DavidDoes/react-hot-cold-tests
